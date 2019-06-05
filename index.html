@@ -1,0 +1,73 @@
+
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+         <meta charset="UTF-8">
+         <title>Lectura</title>
+          <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       </head>
+
+
+       <body>
+        <div class="container">
+            <div class="row">
+          <h1>Lectura</h1>
+        
+            
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Codigo" id="codigo" type="text" name="codigo" class="validate">
+                    <label for="first_name">Codigo </label>
+                </div>
+              </div>
+                <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Nombre" id="nombre" type="text" name="nombre" class="validate">
+                    <label for="first_name">Nombre</label>
+                </div>
+              </div>
+                <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Cuanto" id="cuanto" type="text" name="haciendo" class="validate">
+                    <label for="first_name">Cuanto Tiempo? (solo minutos[numerico]) </label>
+                </div>
+              </div>
+                <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Haciendo" id="haciendo" type="text" name="haciendo" class="validate">
+                    <label for="first_name">Que has hecho?  </label>
+                </div>
+                 </div>
+
+            </form>
+          </div>
+          <button class="btn btn-large" id="guardar">guardar </button>
+        </div>
+      </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+            <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBqeWJwitnb0_oljqRLexhVigJT0xajujM",
+    authDomain: "myapp-3fbec.firebaseapp.com",
+    databaseURL: "https://myapp-3fbec.firebaseio.com",
+    projectId: "myapp-3fbec",
+    storageBucket: "myapp-3fbec.appspot.com",
+    messagingSenderId: "816586192342"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/JavaScript" src="app.js"></script>
+         
+       </body>
+       </html>
